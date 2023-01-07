@@ -1,0 +1,17 @@
+#thousands separator
+
+def format_number(n):
+    string = str(n)[::-1]
+    lst = []
+    count = 0
+    for i in string:
+        count += 1
+        lst.append(i)
+        if count % 3 == 0:
+            lst.append(',')
+
+    new_string = "".join(lst[::-1])
+    print(new_string)
+
+
+format_number(1000000)
