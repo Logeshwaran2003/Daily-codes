@@ -1,0 +1,13 @@
+#index value multiplication
+
+array = [int(i)for i in input (). split (' ')]
+num = int(input ())
+
+count = 0
+for i in array:
+    for j in array:
+        if i+j == num:
+            count += 1
+    if count == 1:
+        print('True')
+        break
