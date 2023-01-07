@@ -1,0 +1,12 @@
+#pentagon function 
+
+m = int(input())
+count = 1
+
+if m == 1:
+    print(m)
+else:
+    for i in range(1, m):
+        count = count + 5*i
+
+print(count)
