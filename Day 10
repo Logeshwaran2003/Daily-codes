@@ -1,0 +1,15 @@
+#staircase climb
+
+m=int(input())
+n=1
+l=2
+if m==1:
+    print(n)
+elif m==2:
+    print(l)
+else:
+    for i in range(3,m+1):
+        d=n+l
+        n=l
+        l=x
+    print(x)
