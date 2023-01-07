@@ -1,0 +1,16 @@
+#decoding message 
+
+number = len(input())
+
+count1 = 1
+count2 = 2
+
+if number == 1:
+    print(number)
+if number == 2:
+    print(number)
+else:
+    for i in range(0, number-3):
+        count1, count2 = count2, count1 + count2
+
+print(count1+count2)
