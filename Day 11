@@ -1,0 +1,17 @@
+#longest substring
+
+a = input()
+n = int(input())
+b = ""
+list = []
+for i in a:
+    b += i
+    if len(set(a)) < n:
+        continue
+    if len(set(b)) > n:
+        m = b[0]
+        b = b.replace(m, '')
+        continue
+    if len(set(b)) == n:
+        list.append(b)
+print(max(list, key = len))
